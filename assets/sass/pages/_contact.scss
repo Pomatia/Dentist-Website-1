@@ -1,0 +1,45 @@
+.jb-contact-from-2{
+    padding: 6rem 0;
+}
+
+.working-houre{
+    padding: 0 5rem;
+    border-left: solid .1rem $color-bl-10;
+    .icon-area{
+        margin-bottom: 6rem;
+        i{
+            font-size: 5rem;
+            padding: 3rem 3rem ;
+            background-color: $primary-c;
+            color: $color-wh;
+            border-radius: 8rem;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+        }
+    }
+    .time-area{
+        .heading{
+            margin-bottom: 1rem;
+            h3{
+                text-transform: capitalize;
+            }
+        }
+        table {
+            text-align: left;
+            td {
+           font-weight: 600;
+                font-size: 1.7rem;
+                padding: 1rem 0rem;
+            }
+           
+        }
+    }
+}
+
+@media(max-width:991px){
+    .working-houre{
+        margin-top: 3rem;
+        padding: 0 2rem;
+        border: none;
+    }
+}

@@ -1,0 +1,210 @@
+.news-blog-page {
+    background-color: $background-c;
+    .side-ber {
+        padding-left: 3rem;
+    }
+    .search {
+        margin-top: 3rem;
+        i {
+            padding: 0 1.5rem;
+        }
+        input {
+            background-color: transparent;
+            border: solid $color-bl-10 0.1rem;
+            border-radius: 0.3rem;
+            padding: 1rem 2rem;
+            outline: none;
+            font-size: 1.6rem;
+            color: $text-c-head;
+            font-weight: 600;
+        }
+        input::placeholder {
+            font-size: 1.4rem;
+            color: $text-c-head;
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+        button {
+            font-size: 1.6rem;
+            outline: none;
+            border: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: $color-wh;
+            background-color: $f-text-c-ho;
+        }
+        .btn:focus {
+            outline: none;
+        }
+        .btn-outline-secondary:focus {
+            box-shadow: none;
+        }
+    }
+    .list-item {
+        margin: 5rem 0;
+        ul {
+            padding-left: 2rem;
+            li {
+                list-style: none;
+                font-size: 1.6rem;
+                font-weight: 500;
+
+                margin-top: 1rem;
+                i {
+                    margin-right: 1rem;
+                    font-size: 2.4rem;
+                    float: left;
+                }
+
+                a {
+                    color: $color-bl-7;
+                    transition: all 0.3s;
+                }
+                a:hover {
+                    color: $primary-c;
+                    transition: all 0.3s;
+                }
+            }
+        }
+    }
+}
+.jb-blog-single-contain-1 {
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .header {
+        position: relative;
+        i {
+            position: absolute;
+            font-size: 2.2rem;
+            padding: 1rem 1.1rem;
+            color: $color-wh;
+            border: solid 0.4rem $color-wh;
+            background-color: $primary-c;
+            border-radius: 4rem;
+            top: -5rem;
+            right: 1rem;
+            box-shadow: none;
+            transition: box-shadow 0.4s;
+        }
+        i:hover {
+            box-shadow: $card-sh-2;
+            transition: all 0.4s;
+        }
+    }
+    table {
+        td {
+            font-weight: 600;
+            a {
+                color: $text-c-head;
+                transition: all 0.4s;
+            }
+            a:hover {
+                color: $primary-c;
+                transition: all 0.4s;
+            }
+        }
+    }
+    .contain {
+        margin: 3rem 0;
+        p {
+            text-align: justify;
+            font-weight: 500;
+        }
+    }
+    .comment-area {
+        .commentator {
+            margin-top: 5rem;
+        }
+        .picture {
+            img {
+                float: left;
+                width: 7rem;
+                height: 7rem;
+                border-radius: 10rem;
+            }
+        }
+        .contain {
+            margin-left: 9rem;
+            position: relative;
+            .reply-like {
+                position: absolute;
+                top: 0rem;
+                right: 0rem;
+                width: 15rem;
+                a {
+                    color: $text-c-head;
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    i {
+                        margin-right: 1rem;
+                    }
+                    transition: all 0.4s;
+                }
+                a:hover {
+                    color: $primary-c;
+                    transition: all 0.4s;
+                }
+                .reply {
+                    float: left;
+                    margin-right: 1rem;
+                }
+                .like {
+                    a {
+                        color: $primary-c;
+                    }
+                }
+            }
+            p {
+                border-bottom: solid 0.1rem $color-bl-10;
+                padding-bottom: 1rem;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .jb-blog-single-contain-1 {
+        .comment-area {
+            .picture {
+                img {
+                    float: none;
+                }
+            }
+            .contain {
+                margin-left: 0rem;
+            }
+            .commentator-reply {
+                margin-left: 2rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 370px) {
+    .news-blog-page {
+        background-color: $background-c;
+        .side-ber {
+            padding-left: 2rem;
+        }
+        .search {
+            margin-top: 3rem;
+            i {
+                padding: 0 0rem;
+              
+            }
+
+            input {
+                background-color: transparent;
+                border: solid $color-bl-10 0.1rem;
+                border-radius: 0.3rem;
+                padding: 1rem 2rem;
+                outline: none;
+                font-size: 1.6rem;
+                color: $text-c-head;
+                font-weight: 600;
+            }
+        }
+    }
+}

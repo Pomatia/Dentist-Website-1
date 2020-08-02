@@ -1,0 +1,172 @@
+button:focus {
+    outline: none;
+   
+}
+.btn-g-2
+ {
+    color: $color-wh;
+    padding: .8rem 2rem;
+    border: none;
+    text-align: center;
+    border-radius: 0.3rem;
+    background-color:$primary-c;
+    font-weight: 600;
+    box-shadow: $card-sh;
+    font-size: 1.6rem;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    transition: letter-spacing 0.3s;
+    outline: none;
+    .i-right {
+        margin-left: 0.2rem;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+}
+
+.btn-g-2:hover
+ {
+    color: $color-wh;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    .i-right {
+        margin-left: 1.5rem;
+        margin-right: -1.5rem;
+        opacity: 1;
+        transition: all 0.3s;
+    }
+    transition: letter-spacing 0.3s;
+}
+.btn-g-3
+ {
+    color: $color-wh;
+    padding: 1.4rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    box-shadow: $button-sh;
+    font-size: 1.6rem;
+    letter-spacing: normal;
+    transition: letter-spacing 0.3s;
+    .i-left {
+        margin-right: 0.2rem;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+    .i-right {
+        margin-left: 0.2rem;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+}
+
+.btn-g-3:hover
+{
+    color: $color-wh;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    .i-left {
+        margin-right: 1.5rem;
+        margin-left: -1.5rem;
+        opacity: 1;
+        transition: all 0.5s;
+    }
+    .i-right {
+        margin-left: 1.5rem;
+        margin-right: -1.5rem;
+        opacity: 1;
+        transition: all 0.3s;
+    }
+    transition: letter-spacing 0.3s;
+}
+
+
+.btn-g-3 {
+    background: $color-g-bul-3;
+}
+
+
+.icon-bw-3 {     
+    li {
+        display: inline;
+        a {
+            color: $color-wh;
+            border: solid $color-wh;
+            border-radius: 2rem;
+            transition: all .5s;
+            border-width: 0.15rem;
+            padding: 1.1rem 0rem;
+            width: 40px;
+            margin: 0rem 0.6rem;
+            height: 40px;
+            display: inline-block;
+            font-size: 15px;
+            text-align: center;
+        }
+        a:hover {
+            border-radius: .5rem;
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+        }
+    }
+}
+
+
+.icon-cud-6 {
+    li {
+      display: inline-block;     
+      position: relative;
+      
+      a {
+       // position: absolute;
+        color: $color-wh;
+        background-color: $color-bul;
+        padding: 1.2rem 0rem;
+        width: 4rem;
+        height: 3.8rem;
+        display: block;
+        font-size: 16px;
+        text-align: center;
+       transition: all .5s;
+    
+      }
+      a:hover {
+        transition: all 0.5s;
+      }
+    }
+    ul li:nth-child(1){
+        a{
+            background-color:$color-facebook;
+            margin-right: -0.3rem;
+            transition: all .4s;
+        }
+        a:hover{
+        
+          color: $color-facebook;
+          background-color: $color-wh;
+            transition: all .4s;
+        }
+    }
+    ul li:nth-child(2){
+        a{
+            background-color:$color-linkedin;
+            transition: all .4s;
+        }
+        a:hover{
+            color: $color-linkedin;
+            background-color: $color-wh;
+            transition: all .4s;
+        }
+    }
+    ul li:nth-child(3){
+        a{
+            background-color:$color-twitter;
+            transition: all .4s;
+            margin-left: -0.3rem;
+        }
+        a:hover{
+          color: $color-twitter;
+          background-color: $color-wh;
+          transition: all .4s;
+        } 
+    } 
+  }

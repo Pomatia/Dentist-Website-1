@@ -1,0 +1,25 @@
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+html{
+
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    -z-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+body{
+    box-sizing: border-box;
+    //font-family: Raleway, sans-serif;  
+    font-family: "Montserrat", sans-serif;
+    color:$text-c-head;
+}

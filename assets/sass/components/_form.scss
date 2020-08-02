@@ -1,0 +1,270 @@
+.jb-contact-from-1 {
+    font-family: "Montserrat", sans-serif;
+    background-color: $primary-c;
+    padding: 3rem 3rem;
+    padding-bottom: 0;
+    width: 360px;
+    margin-right: 1rem;
+    margin-left: auto;
+    border-radius: 0.2rem;
+    box-shadow: $card-sh-1;
+    .heading {
+        h2 {
+            color: $text-c-wh;
+            margin-bottom: 2rem;
+        }
+    }
+    .input-area {
+        font-weight: 500;
+        input {
+            background-color: transparent;
+            outline: none;
+            border: none;
+            border-radius: none;
+            border-bottom: solid 0.1rem $text-c-wh;
+            margin-bottom: 1.5rem;
+            font-size: 15px;
+
+            color: $text-c-wh;
+        }
+        input::placeholder {
+            color: $text-c-wh;
+            text-transform: capitalize;
+        }
+        textarea {
+            background-color: transparent;
+            outline: none;
+            border: none;
+            border-radius: none;
+            border-bottom: solid 0.1rem $text-c-wh;
+            margin-bottom: 1.5rem;
+            font-size: 15px;
+
+            color: $text-c-wh;
+        }
+        textarea::placeholder {
+            color: $text-c-wh;
+        }
+
+        .date-piker {
+            font-family: "Montserrat", sans-serif;
+            width: 100%;
+            background: url(../images/clanderIcon.png) center right 15px no-repeat #fff;
+            background-size: 27px 20px;
+            background-color: transparent;
+            margin-bottom: 3rem;
+        }
+    }
+    .footer {
+        margin-top: 3rem;
+        margin-left: -3rem;
+        margin-right: -3rem;
+        padding: 2rem 0;
+        background-color: $background-c-2;
+
+        h4 {
+            font-weight: 700;
+            color: $text-c-head;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+    }
+}
+
+.jb-contact-from-2 {
+    .contact_form {
+        padding: 0 4rem;
+        .input_fild {
+            font-size: 16px;
+            margin: 1rem 0;
+            label {
+                font-weight: 600;
+            }
+            input {
+                font-size: 16px;
+                border-width: 0.12rem;
+                text-transform: unset;
+                font-weight: 600;
+                outline: none;
+                border: 1px solid $color-bl-11;
+                border-radius: 3px;
+                height: 3.6rem;
+            }
+            .form-control:focus {
+                outline: 0;
+                border-color: #cbd5d8;
+                background-color: #fff;
+                color: #364750;
+                outline: 0;
+                box-shadow: $input-sh;
+            }
+        }
+        .redio-button {
+            margin: 2rem 0;
+            .form-check {
+                float: left;
+                margin-left: 2rem;
+                input {
+                    font-weight: 600;
+                    font-size: 16px;
+                    margin-top: 0.6rem;
+                }
+                input[type="radio"] {
+                    transform: scale(1.4);
+                }
+                label {
+                    font-weight: 600;
+                    font-size: 17px;
+                    text-transform: capitalize;
+                    margin-left: 1rem;
+                }
+            }
+        }
+        .date-piker {
+            font-family: "Montserrat", sans-serif;
+            width: 100%;
+            background: url(../images/clanderIcon_black.png) center right 15px no-repeat #fff;
+            background-size: 27px 20px;
+            background-color: transparent;
+            margin-bottom: 3rem;
+        }
+        .massage_area {
+            font-size: 16px;
+            font-weight: 600;
+            textarea {
+                font-size: 16px;
+                border-width: 0.12rem;
+                text-transform: unset;
+                font-weight: 600;
+                outline: none;
+                border: 1px solid $color-bl-11;
+                border-radius: 3px;
+            }
+            .form-control:focus {
+                outline: 0;
+                border-color: #cbd5d8;
+                background-color: #fff;
+                color: #364750;
+                outline: 0;
+                box-shadow: $input-sh;
+            }
+        }
+
+        .select-item {
+            margin: 3rem 0;
+
+            cursor: pointer;
+            .img-area {
+                float: left;
+                margin: 0 1rem;
+                margin-left: 1.5rem;
+                img {
+                    height: 7rem;
+                    width: 7rem;
+                    border-radius: 10rem;
+                }
+            }
+            .contain {
+                h5 {
+                    font-size: 1.4rem;
+                }
+                h6 {
+                    font-size: 1.2rem;
+                }
+            }
+            a:focus {
+                img {
+                    border: solid 0.5rem $primary-c;
+                }
+            }
+        }
+        .carousel-control-prev {
+            justify-content: left;
+            width: 0%;
+            i {
+                color: $primary-c;
+                font-size: 2.2rem;
+            }
+        }
+        .carousel-control-next {
+            justify-content: right;
+            width: 0%;
+           
+            i {
+                color: $primary-c;
+                font-size: 2.2rem;
+               
+            }
+        }
+    }
+    .address{
+        .contain-area{
+            margin-bottom: 5rem;
+            border-bottom: solid .1rem $color-bl-11;
+            i{
+                float: left;
+                font-size: 2rem;
+            }
+            .contain{
+                margin-left: 3rem;
+                h4 {
+                    font-size: 1.5rem;
+                 
+                }
+            }
+        }
+
+    }
+}
+@media (max-width: 1199px) {
+    .jb-contact-from-2 {
+        padding:3rem 0;
+        .contact_form {
+            padding: 0 1rem;
+            .carousel-inner{
+                padding-left: 2rem
+            }
+            .select-item {
+            text-align: center;
+                .img-area {
+                    float: none;
+                }
+            }
+            .contain{
+                h5{
+                    text-align: center !important;
+                }
+                h6{
+                    text-align: center !important;
+                }
+            }
+            .carousel-control-next {
+                right: 1rem;
+            }
+        }
+    }
+}
+.google-map{
+  margin-top: 7rem;
+    margin-bottom: 3rem;
+    iframe{
+        width: 100%;
+        height: 500px;
+    } 
+}
+
+@media (max-width: 768px) {
+    .jb-contact-from-1 {
+        width: 300px;
+        margin-right: auto;
+    }
+    .jb-contact-from-2 {
+        padding:3rem 0 !important;}
+    
+}
+@media (max-width: 340px) {
+    .jb-contact-from-1 {
+        width: 280px !important;
+    }
+}
+

@@ -1,0 +1,88 @@
+
+@media(max-width:991px){
+    .modern-dentist{
+        padding: 5rem 0;
+        .contain{
+            padding: 0rem 1rem;}
+        .img-area{
+            margin-top: 6rem;
+
+        }
+    }
+  .top-section{
+    .col-lg-4{
+        margin-top: 2rem;
+    }
+  }
+    .our-mission{
+        .contain{
+            margin-top: 3rem;
+        }
+        .director-area{
+            padding-top: 2rem;
+            margin-top: 0rem !important;
+        } 
+    }
+
+  .service-page-contain{
+      .picture-area{
+          .img-area{
+            i {
+                top: auto;
+                bottom: -2rem;
+                right: 12rem;
+                transform: rotate(90deg);
+                 padding: 0.4rem .7rem;
+                 font-size: 1.8rem;
+                 border: solid $color-wh 0.3rem;
+            }
+          }
+
+      }
+  }  
+}
+@media (max-width: 768px) {
+    .jb-contact-from-1 {
+        width: 300px;
+        margin-right: auto;
+    }
+    .top-banner {
+        padding: 5rem 0;
+        .contain-area {
+            height: auto !important;
+            .contain {
+                position: relative !important;
+                margin-bottom: 5rem;
+            }
+        }
+    }
+    .success-story {
+        padding-top: 5rem !important;
+    }
+    .service-page-contain{
+        padding-bottom: 3rem;
+    }
+    .review-section{
+        padding-top: 2rem;
+    }  
+    hr{
+        width: 95%;
+    }
+}
+@media(max-width:557px){
+    .fitur-area{
+        padding: 5rem 0;
+        .contain{
+            padding: 0rem 1rem;}
+        .img-area{
+            display: none;
+
+        }
+    }
+    .our-doctor{
+        padding: 5rem 0 !important;
+        h2{
+            margin-bottom: 1rem !important;
+        }
+    }
+}

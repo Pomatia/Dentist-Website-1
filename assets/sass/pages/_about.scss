@@ -1,0 +1,178 @@
+.about-top-banner {
+    background-color: $background-c;
+    span{
+        font-size: 2rem;
+      
+    }  .checked{
+        color: $primary-c;
+    }
+}
+
+.about-our-doctor {
+    background-color: $background-c-2;
+}
+.our-mission {
+    padding: 8rem 0;
+    .img-area {
+        img {
+            width: 100%;
+        }
+    }
+    .contain {
+        padding-left: 2rem;
+        h3 {
+            margin: 2rem 0;
+            font-weight: 700;
+        }
+        .icon-area {
+            float: left;
+
+            i {
+                font-size: 5rem;
+                color: $primary-c;
+            }
+        }
+        .contain-area {
+            padding-left: 6rem !important;
+            padding-right: 0 !important;
+            h3 {
+                margin: 0.5rem 0 !important;
+                font-size: 1.8rem;
+            }
+            h4 {
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .director-area {
+        margin-top: 6rem;
+        .director {
+            margin: 4rem 0;
+            .img-area {
+                float: left;
+                margin-right: 2rem;
+                img {
+                    height: 10rem;
+                    width: 10rem;
+                    border-radius: 10rem;
+                }
+            }
+            .contain-area {
+                margin-top: 2rem;
+            }
+        }
+    }
+}
+
+//--time-line--//
+.jb-time-line-1 {
+    background-color: $primary-c;
+    padding: 8rem 0;
+    color: $text-c-wh;
+    position: relative;
+    a.previous-button {
+        position: absolute;
+        top: 2.4rem;
+        left: -.7rem;
+        border: solid 2px $text-c-wh;
+        background-color: $primary-c;
+        border-radius: 5rem;
+        padding: .5rem 1rem;
+        padding-right: 1.5rem;
+        z-index: 5;
+    }
+    a.next-button {
+        position: absolute;
+        top: 2.4rem;
+        right: -.7rem;
+        border: solid 2px $text-c-wh; 
+        background-color: $primary-c;
+        border-radius: 5rem;
+        padding: .5rem 1rem;
+        padding-left: 1.5rem;
+        z-index: 5;
+    }
+    .time-area {
+        position: relative;
+
+        a {
+            i {
+                background-color: $primary-c;
+                font-size: 3rem;
+                color: $text-c-wh-2;
+                z-index: 5;
+            }
+
+            .up-arrow {
+                display: inline-block;
+            }
+            .down-arrow {
+                display: none;
+            }
+            h6 {
+                color: $text-c-wh-2;
+            }
+        }
+        a.active {
+            i {
+                color: $text-c-wh;
+            }
+            .up-arrow {
+                display: none;
+            }
+            .down-arrow {
+                display: inline-block;
+            }
+            h6 {
+                color: $text-c-wh;
+            }
+        }
+    }
+    .time-area::before {
+        content: " ";
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: 4.3rem;
+        width: 100%;
+        height: 1px;
+
+        background-color: $text-c-wh-2;
+    }
+}
+
+@media (max-width: 767px) {
+    .jb-time-line-1 {
+        padding: 5rem 0;
+        .container {
+            h2 {
+                margin-bottom: 0 !important;
+            }
+        }
+        .tab-content {
+            margin-top: 3rem !important;
+        }
+        .time-area {
+            margin-top: 2rem !important;
+        }
+        .time-area::before {
+            transform: rotate(90deg);
+            display: none;
+        }
+        a {
+            margin-top: 2rem !important;
+            i {
+                float: left;
+                margin-left: 30%;
+                margin-right: 1rem;
+                z-index: 5;
+            }
+            h6 {
+                text-align: left !important;
+            }
+        }
+    }
+}
+
+//--time-line end--//

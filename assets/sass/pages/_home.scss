@@ -1,0 +1,217 @@
+.top-banner {
+    background: url(../images/background/3298094.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 8rem 0;
+    .contain-area{
+        height: 490px;
+        position: relative;
+        .contain{
+            position: absolute;
+            top: auto;
+            right: auto;
+            left: auto;
+            bottom: 0px;
+            color: $text-c-wh;
+            background-color: #00abef5b ;
+            border-radius: .3rem;
+            padding: 1rem 2rem;
+            h1{
+                font-size: 4rem;
+            }
+         
+        }
+    }
+   
+}
+//--service--//
+.service-area{
+    padding: 8rem 0;
+    h2{
+        color: $text-c-head;
+        font-weight: 700;
+    }
+    .service-card{
+        margin: 1rem 0;
+        padding: 3rem 0;
+        text-align: center;
+        background-color: $primary-c;
+        color: $text-c-wh;
+        border: solid .1rem $primary-c;
+        transition: all .4s;
+    
+        i{
+            font-size: 6rem;
+            
+        }
+        h4{
+            margin-top: 1rem;
+        }
+    }
+    a:hover{
+        text-decoration: none;
+    }
+
+    .service-card-area:nth-child(1){
+        .service-card{
+            background-color: $primary-c; 
+            transition: all .4s; 
+        }
+        .service-card:hover,
+        .service-card.active{
+            background-color: transparent;
+            transition: all .4s; 
+        }
+    }
+    .service-card-area:nth-child(2){
+        .service-card{
+            background-color: $color-pi;
+            border-color: $color-pi;
+            transition: all .4s; 
+        }
+        .service-card:hover,
+        .service-card.active{
+            background-color: transparent;
+            border-color: $primary-c;
+            transition: all .4s; 
+        }
+    }
+    .service-card-area:nth-child(3){
+        .service-card{
+            background-color: #33FFC7;
+            border-color: #33FFC7;
+            transition: all .4s; 
+        }
+        .service-card:hover,
+        .service-card.active{
+            background-color: transparent;
+            border-color: $primary-c;
+            transition: all .4s; 
+        }
+    }
+    .service-card-area:nth-child(4){
+        .service-card{
+            background-color: $color-bl-8;
+            border-color: $color-bl-8;
+            transition: all .4s; 
+        }
+        .service-card:hover,
+        .service-card.active{
+            background-color: transparent;
+            border-color: $primary-c;
+            transition: all .4s; 
+        }
+    }
+    .service-card-area:nth-child(5){
+        .service-card{
+            background-color: #FF3399;
+            border-color: #FF3399;
+            transition: all .4s; 
+        }
+        .service-card:hover,
+        .service-card.active{
+            background-color: transparent;
+            border-color: $primary-c;
+            transition: all .4s; 
+        }
+    }
+    .service-card-area:nth-child(6){
+        .service-card{
+            background-color: #7D33FF;
+            border-color: #7D33FF;
+            transition: all .4s; 
+        }
+        .service-card:hover,
+        .service-card.active{
+            background-color: transparent;
+            border-color: $primary-c;
+            transition: all .4s; 
+        }
+    }
+    .service-card-area:nth-child(7){
+        .service-card{
+            background-color:#33F6FF;
+            border-color:#33F6FF;
+            transition: all .4s; 
+        }
+        .service-card:hover,
+        .service-card.active{
+            background-color: transparent;
+            border-color: $primary-c;
+            transition: all .4s; 
+        }
+    }
+    .service-card-area:nth-child(8){
+        .service-card{
+            background-color:#5EFF33;
+            border-color:#5EFF33;
+            transition: all .4s; 
+        }
+        .service-card:hover,
+        .service-card.active{
+            background-color: transparent;
+            border-color: $primary-c;
+            transition: all .4s; 
+        }
+    } 
+    .service-card:hover,
+    .service-card.active{
+        background-color: transparent;
+        color: $primary-c;
+        box-shadow: $primary-sh;
+        transform: translateY(-10px);
+        transition: all transform 0.4s ease-out, box-shadow 0.5s ease-in-out;
+    }   
+}
+//--service end--//
+
+//--success story--//
+.success-story {
+    padding-top: 8rem;
+    .client-area{
+        a{
+            margin-top: 2rem;
+            color: $text-c-head;
+            img{
+                width: 10rem;
+                height: 10rem;
+                float: left;
+                border-radius: 5rem;
+                margin-right: 1rem;
+                border: solid .4rem $text-c-wh;
+                transition: all .4s;
+            }
+            .contain{
+                padding-top: 2rem;
+                h4{
+                    font-weight: 700;
+                }
+            }
+         
+        }
+        a.active{
+            img{
+                border-color: $primary-c;
+                box-shadow: $primary-sh-2;
+            }
+           
+        }
+        a:hover{
+            img{
+                border-color: $primary-c;
+                box-shadow: $primary-sh-2;
+                transition: all .4s;
+            }
+           
+        }
+    } 
+
+}
+//--success story end--//
+//--news--//
+.news-blog{
+    background-color: $background-c-2;
+
+}
+//--news blog end--//

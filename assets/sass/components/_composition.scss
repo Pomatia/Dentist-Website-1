@@ -1,0 +1,109 @@
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+
+.top-section {
+    background-image: linear-gradient(rgba(18, 155, 247, 0.959), rgba(38, 182, 248, 0.87)),
+        url(../images/background/grid-bg.jpg);
+    // background-color: $primary-c;
+    color: $text-c-wh;
+    .icon-area {
+        float: left;
+        i {
+            font-size: 5rem;
+            
+        }
+    }
+    .col-lg-4 .contain {
+        margin-left: 5rem !important;
+    }
+}
+//--fiture area--//
+.fitur-area {
+    padding: 8rem 0;
+    background-color: $background-c-2;
+    overflow: hidden;
+    .contain {
+        padding: 3rem 2rem;
+        h2 {
+            margin-bottom: 3rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        p {
+            font-weight: 600;
+            margin-bottom: 5rem;
+        }
+    }
+    .img-area {
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+        height: 400px;
+        img {
+            position: absolute;
+            z-index: 2;
+            box-shadow: $card-sh;
+        }
+        img:nth-child(1) {
+            position: absolute;
+            width: 35rem;
+            height: 25rem;
+            z-index: 5;
+            right: 1rem;
+            top: 0rem;
+            border: solid 1.5rem $color-wh;
+        }
+        img:nth-child(2) {
+            position: absolute;
+            width: 25rem;
+            height: 20rem;
+            z-index: 6;
+            left: 2rem;
+            top: 21rem;
+            border: solid 1rem $color-wh;
+        }
+        img:nth-child(3) {
+            position: absolute;
+            width: 15rem;
+            height: 10rem;
+            z-index: 7;
+            left: 2rem;
+            top: 5rem;
+            border: solid 0.5rem $color-wh;
+        }
+    }
+}
+//--fiture area end--//
+//--review area --//
+.review-section {
+    padding: 4rem 0rem;
+
+    .review-area {
+        margin: 4rem 0;
+        .picture-area {
+            .img-area {
+                float: left;
+                margin-right: 2rem;
+                img {
+                    height: 10rem;
+                    width: 10rem;
+                    border-radius: 10rem;
+                }
+            }
+        }
+        .contain-area{
+            span{
+                font-size: 1.4rem;
+            }
+            .checked{
+                color:$primary-c;
+              
+            }
+         }
+    }
+}
+//--review area end--//

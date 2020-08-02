@@ -1,0 +1,309 @@
+//--Maga menu start--//
+header {
+    .header-menu-area {
+        background-color: $background-c;
+        .navbar-brand {
+            margin-right: 0;
+            img {
+                width: 180px;
+                height: auto;
+            }
+        }
+    }
+    .menu li a {
+        font-size: 14px;
+        font-weight: 700;
+        color: $menu-li-c;
+        margin: 0 1.2rem;
+        padding: 2rem 0;
+        display: block;
+        letter-spacing: 0.01rem;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    .menu li a:hover {
+        color: $primary-c;
+        transition: all 0.3s;
+    }
+
+    .menu li.dropdown {
+        position: relative;
+    }
+
+    .mega-menu .mega-menu-area {
+        position: initial;
+    }
+
+    .mega-menu .mega-submenu {
+        width: 100%;
+        background-color: $background-c;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        padding-left: 0;
+        list-style-type: none;
+        border-top: 3px solid $primary-c;
+        box-shadow: $card-sh;
+        z-index: 9999;
+        opacity: 0;
+        transform: scaleY(0);
+        transform-origin: top;
+        transform-origin: left top;
+        text-align: left;
+        padding: 20px 0;
+    }
+
+    .mega-menu .mega-submenu li a {
+        padding: 0.6rem 2rem;
+        margin: 0;
+        font-weight: 600;
+        font-size: 14px;
+        display: block;
+        text-transform: capitalize;
+        transition: 0.3s;
+    }
+    .mega-menu .mega-submenu {
+        transition: 0.4s;
+        .mega-menu-heading {
+            a {
+                font-size: 15px;
+                color: $primary_c;
+                padding: 8px 20px;
+            }
+        }
+    }
+    .mega-menu .mega-submenu li a:hover {
+        background-color: $background-c-2;
+        margin-left: 0.5rem;
+        transition: all 0.2s;
+    }
+
+    .mega-menu .menu > li:hover .mega-submenu {
+        transition: 0.4s;
+        opacity: 1;
+        transform: scaleY(1);
+    }
+    .btn-g-1 {
+        color: $color-wh !important;
+        padding: 0.7rem 1rem !important;
+        margin-top: 1.4rem !important;
+        border-radius: 0.4rem;
+        font-weight: 600;
+        i {
+            color: $color-wh !important;
+            margin-left: 0.5rem;
+        }
+    }
+    .btn-g-1:hover {
+        color: $color-wh !important;
+        text-decoration: none;
+    }
+
+    .btn-g-1 {
+        background: $button-c;
+    }
+}
+
+//--Maga menu end--//
+
+///--stiky menu start--//
+
+.primary-menu.fixed-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: $background-c;
+    padding: 6px 0;
+    box-shadow: $menu-sh;
+}
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+@media (print), (prefers-reduced-motion: reduce) {
+    .animated {
+        -webkit-animation-duration: 1ms !important;
+        animation-duration: 1ms !important;
+        -webkit-transition-duration: 1ms !important;
+        transition-duration: 1ms !important;
+        -webkit-animation-iteration-count: 1 !important;
+        animation-iteration-count: 1 !important;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+///--stiky menu end--//
+//mobail menu//
+
+@media (max-width: 991px) {
+    .primary-menu.fixed-menu {
+        padding: 4px 0;
+    }
+    .primary-menu.animated {
+        .btn-mobail-icon {
+            cursor: pointer;
+            font-size: 1.5rem;
+            margin: 1.4rem 0;
+        }
+    }
+}
+.primary-menu {
+    .btn-mobail-icon {
+        cursor: pointer;
+        font-size: 1.5rem;
+        margin: 1.6rem 0;
+
+        span {
+            box-shadow: $menu-sh;
+            color: $primary-c;
+            padding: 0.7rem 1rem;
+            border: solid $primary-c 0.13rem;
+            border-radius: 2rem;
+            border-bottom-right-radius: 5px !important;
+        }
+    }
+}
+
+.overlay {
+    display: block;
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $primary-c;
+    z-index: 999999;
+    overflow-x: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    overflow-y: auto;
+    .navbar-brand {
+        padding: 2rem 0;
+        text-align: left;
+        margin-left: 3rem !important;
+        img {
+            width: 20rem;
+        }
+    }
+    .closebtn {
+        position: absolute;
+        top: 3.5rem;
+        right: 5%;
+        color: $background-c-2;
+        border: solid $background-c-2;
+        border-radius: 1rem;
+        border-width: 0.15rem;
+        padding: 0.2rem 0rem;
+        width: 35px;
+        height: 35px;
+        padding-top: 0.5rem;
+        font-size: 2rem;
+        text-align: center;
+        color: $background-c-2;
+        box-shadow: $menu-sh;
+    }
+
+    .mobile-menu {
+        padding-top: 3rem;
+        border-top: 2px solid $background-c-2;
+        overflow-y: auto;
+        text-align: left;
+
+        .nav-item {
+            a {
+                font-size: 16px;
+                font-weight: 600;
+                color: $background-c-2;
+                letter-spacing: 0.01rem;
+                text-transform: uppercase;
+                display: block;
+                border-bottom: solid rgb(241, 241, 241);
+                border-width: 0.05rem;
+                padding: 1rem 0;
+                padding-left: 2rem;
+            }
+        }
+
+        .accordion {
+            .card {
+                border: none;
+                border-bottom: solid rgb(241, 241, 241) 0.05rem;
+                .card-header {
+                    background-color: $primary-c;
+
+                    padding: 0 0;
+                    padding-right: 2rem;
+                    a {
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: $color-wh;
+                        text-decoration: none;
+                        border: none;
+                    }
+                    a:hover {
+                        text-decoration: none;
+                    }
+                    h5 {
+                        padding: 0.2rem 0rem;
+                        font-size: 16px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+
+                        i {
+                            transform: rotateZ(-180deg);
+                            transition: all 1s;
+                            float: right;
+                        }
+                    }
+
+                    .collapsed {
+                        h5 i {
+                            transform: rotateZ(0deg);
+                            transition: all 1s;
+                        }
+                    }
+                }
+                .card-body {
+                    padding: 0rem;
+                    a {
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: $menu-li-c;
+                        letter-spacing: 0.01rem;
+                        text-transform: uppercase;
+                        display: block;
+                        border-bottom: solid rgb(241, 241, 241);
+                        border-width: 0.05rem;
+
+                        padding: 1rem 0;
+                        padding-left: 3rem;
+                    }
+                }
+            }
+        }
+      
+    }
+}
+
+//--end mobile menu--//

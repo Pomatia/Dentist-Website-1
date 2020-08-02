@@ -1,0 +1,661 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="assets/images/faviconIcon.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Dentist-1</title>
+</head>
+
+<body>
+    <!--Start Hader Section-->
+    <header>
+        <div class="header-menu-area primary-menu ">
+            <div class="container">
+                <nav class="header-menu nav navbar-light align-items-center mega-menu position-relative">
+                    <div class="col-lg-2 col-6 navbar-brand">
+                        <a href="#" class="logo">
+                            <img class="img-fluid" src="assets/images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <!-- Start mobile menu icon -->
+                    <div class="col-6 btn-mobail-icon homePage d-block d-lg-none  text-right">
+                        <span onclick="openNav()">&#9776;</span>
+                    </div>
+                    <!-- end mobile menu icon -->
+                    <!-- Start maga menu section -->
+                    <div class="mega-menu-area col-lg-10 p-0 d-none d-lg-block">
+                        <div class="menu-area d-flex flex-wrap justify-content-end align-items-center">
+                            <ul class="menu d-flex flex-wrap list-unstyled pl-0 m-0 justify-content-end">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="javascript:;">Services</a>
+                                    <div class="mega-submenu col-lg-8">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <ul class="p-0 m-0 pl-5 list-unstyled">
+                                                    <li>
+                                                        <div class="mega-menu-heading"><a href="service_page_1.html">Service-1</a>
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="service_page_2.html">Service-2</a></li>
+                                                    <li><a href="service_page_3.html">Service-3</a></li>
+                                                    <li><a href="service_page_4.html">Service-4</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <ul class="p-0 m-0 middle-line list-unstyled">
+                                                    <li>
+                                                        <div class="mega-menu-heading"><a href="service_page_5.html">Service-5</a>
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="service_page_6.html">Service-6</a>
+                                                    </li>
+                                                    <li><a href="service_page_7.html">Service-7</a></li>
+                                                    <li><a href="service_page_8.html">Service-8</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="doctors.html">Doctors</a></li>
+                                <li><a href="news_blog.html">Blog</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a class="btn-g-1" href="appointment.html">appointment<i class="fas fa-angle-right"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End maga menu section -->
+                </nav>
+            </div>
+        </div>
+        <!-- Start mobile menu section -->
+        <div id="myNav" class="overlay d-lg-none">
+            <div class="row">
+                <div class="col-6 navbar-brand mr-auto ml-auto">
+                    <a href="index.html" class="logo">
+                        <img class="img-fluid white logo_size" src="assets/images/logo_w.png" alt="logo">
+                    </a>
+                </div>
+            </div>
+            <a href="javascript:;" onclick="closeNav()" class="closebtn"><i class="fas fa-times"></i></a>
+            <div class=" d-lg-none  mobile-menu" aria-expanded="false" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <!--Accordion wrapper-->
+                        <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+                            <!-- Accordion card -->
+                            <div class="card">
+                                <!-- Card header -->
+                                <div class="card-header" role="tab" id="heading-1">
+                                    <a data-toggle="collapse" data-parent="#accordionEx" href="#collapse-1"
+                                        aria-expanded="true" aria-controls="collapse-1" class="collapsed">
+                                        <h5 class="mb-0 ">
+                                            Service <i class="fas fa-angle-down "></i>
+                                        </h5>
+                                    </a>
+                                </div>
+                                <!-- Card body -->
+                                <div id="collapse-1" class="collapse" role="tabpanel" aria-labelledby="heading-1"
+                                    data-parent="#accordionEx">
+                                    <div class="card-body">
+                                        <a class="nav-link" href="service_page_1.html">Service-1</a>
+                                        <a class="nav-link" href="service_page_2.html">Service-2</a>
+                                        <a class="nav-link" href="service_page_3.html">Service-3</a>
+                                        <a class="nav-link" href="service_page_4.html">Service-4</a>
+                                        <a class="nav-link" href="service_page_5.html">Service-5</a>
+                                        <a class="nav-link" href="service_page_6.html">Service-6</a>
+                                        <a class="nav-link" href="service_page_7.html">Service-7</a>
+                                        <a class="nav-link" href="service_page_8.html">Service-8</a>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Accordion card -->
+                        </div>
+                        <!-- Accordion wrapper -->
+
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="doctors.html">Doctors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news_blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+                </ul>
+                <div class="col-12 jb-text-c jb-mb-2">
+                    <a href="appointment.html" class="btn-g-1 jb-dis-ib jb-tt-u t-size-2">appointment<i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- end mobile menu section -->
+    </header>
+    <!-- End Header section -->
+
+    <section class="top-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 contain-area">
+                    <div class="contain">
+                        <h1 class="jb-tt-u">profesonal</h1>
+                        <h2 class="jb-tt-u">dental care</h2>
+                        <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat natus accusantium sit
+                            expedita dolores corrupti quaerat. Incidunt dicta reiciendis possimus!</h4>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="jb-contact-from-1">
+                        <div class="heading">
+                            <h2>Lorem, ipsum.</h2>
+                        </div>
+                        <form class="input-area" action="" method="post">
+                            <input type="text" name="contactName" class="form-control" placeholder="Name">
+                            <input type="number" name="contactName" class="form-control" placeholder="Phone Nimber">
+                            <input type="email" name="contactEmail" class="form-control" placeholder="Email">
+
+                            <textarea name="contactMessage" class="form-control" rows="2"
+                                placeholder="Message"></textarea>
+                            <input type="text" class="form-control fa fa-calendar  date-piker" id="usr1"
+                                name="event_date" placeholder="Estimate Date" autocomplete="off">
+
+                            <button type="button" class="btn-g-2 ">submit<i
+                                    class="i-right fas fa-angle-right"></i></button>
+
+                        </form>
+                        <div class="footer jb-text-c">
+                            <h4>Lorem.+06894793877</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Service card start-->
+    <section class="service-area ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 jb-mr-a jb-ml-a jb-text-c">
+                    <h2 class="jb-tt-u jb-mb-3 ">Lorem, ipsum dolor.
+                    </h2>
+                    <div class="row">
+                        <div class="service-card-area col-lg-3 col-md-4 col-6 jb-ml-a jb-mr-a">
+                            <a href="service_page_1.html">
+                                <div class="service-card">
+                                    <i class="fas fa-tooth"></i>
+                                    <h4>Service-1</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="service-card-area col-lg-3 col-md-4 col-6 jb-ml-a jb-mr-a">
+                            <a href="service_page_2.html">
+                                <div class="service-card">
+                                    <i class="fas fa-tooth"></i>
+                                    <h4>Service-2</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="service-card-area col-lg-3 col-md-4 col-6 jb-ml-a jb-mr-a">
+                            <a href="service_page_3.html">
+                                <div class="service-card">
+                                    <i class="fas fa-tooth"></i>
+                                    <h4>Service-3</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="service-card-area col-lg-3 col-md-4 col-6 jb-ml-a jb-mr-a">
+                            <a href="service_page_4.html">
+                                <div class="service-card">
+                                    <i class="fas fa-tooth"></i>
+                                    <h4>Service-4</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="service-card-area col-lg-3 col-md-4 col-6 jb-ml-a jb-mr-a">
+                            <a href="service_page_5.html">
+                                <div class="service-card">
+                                    <i class="fas fa-tooth"></i>
+                                    <h4>Service-5</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="service-card-area col-lg-3 col-md-4 col-6 jb-ml-a jb-mr-a">
+                            <a href="service_page_6.html">
+                                <div class="service-card">
+                                    <i class="fas fa-tooth"></i>
+                                    <h4>Service-6</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="service-card-area col-lg-3 col-md-4 col-6 jb-ml-a jb-mr-a">
+                            <a href="service_page_7.html">
+                                <div class="service-card">
+                                    <i class="fas fa-tooth"></i>
+                                    <h4>Service-7</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="service-card-area col-lg-3 col-md-4 col-6 jb-ml-a jb-mr-a">
+                            <a href="service_page_8.html">
+                                <div class="service-card">
+                                    <i class="fas fa-tooth"></i>
+                                    <h4>Service-8</h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!--Service card end-->
+    <!--modern dentist start-->
+    <section class="modern-dentist fitur-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contain">
+                        <h2>Lorem, ipsum.</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates exercitationem totam
+                            eaque nemo alias. Cumque voluptate iusto id accusantium provident quam sapiente vel earum
+                            sunt enim tenetur a, esse nulla rerum omnis et laboriosam molestias obcaecati vitae.
+                            Blanditiis, praesentium a!</p>
+                        <a class="btn-g-3 jb-tt-u" href="about.html">Learn More<i class="i-right fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 img-area">
+
+                    <img src="assets/images/about/doctor_sq.jpg" alt="">
+                    <img src="assets/images/about/doctor_sq.jpg" alt="">
+                    <img src="assets/images/about/doctor_sq.jpg" alt="">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--modern dentist end-->
+    <!--our doctor -->
+    <section class="our-doctor jb-ptb-8">
+        <div class="container ">
+            <h2 class="jb-tt-u jb-mb-2 jb-text-c font-w-7 ">Our Doctor</h2>
+            <div class="row  ">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="about-card-3">
+                        <div class="card-contain text-bl-5 bg-wh  jb-mr-a jb-ml-a ">
+                            <div class="header-area ">
+                                <div class="image-area ">
+                                   <a href="doctor_single_page.html"> <img class="jb-ml-a jb-mr-a jb-dis-b" src="assets/images/about/doctor_sq.jpg"
+                                        alt=""></a>
+                                </div>
+                            </div>
+                            <a class="icon-round" href="doctor_single_page.html"><i class="fas fa-plus"></i></a>
+                            <div class="title-area ">
+                                <div class="name-title jb-text-c">
+                                    <h3 class="jb-tt-u">dr. poma gover</h3>
+                                    <h4 class="jb-tt-c">senior dental surgeon</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="about-card-3">
+                        <div class="card-contain text-bl-5 bg-wh  jb-mr-a jb-ml-a ">
+                            <div class="header-area ">
+                                <div class="image-area ">
+                                   <a href="doctor_single_page.html"> <img class="jb-ml-a jb-mr-a jb-dis-b" src="assets/images/about/doctor_sq.jpg"
+                                        alt=""></a>
+                                </div>
+                            </div>
+                            <a class="icon-round" href="doctor_single_page.html"><i class="fas fa-plus"></i></a>
+                            <div class="title-area ">
+                                <div class="name-title jb-text-c">
+                                    <h3 class="jb-tt-u">dr. poma gover</h3>
+                                    <h4 class="jb-tt-c">senior dental surgeon</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="about-card-3">
+                        <div class="card-contain text-bl-5 bg-wh  jb-mr-a jb-ml-a ">
+                            <div class="header-area ">
+                                <div class="image-area ">
+                                   <a href="doctor_single_page.html"> <img class="jb-ml-a jb-mr-a jb-dis-b" src="assets/images/about/doctor_sq.jpg"
+                                        alt=""></a>
+                                </div>
+                            </div>
+                            <a class="icon-round" href="doctor_single_page.html"><i class="fas fa-plus"></i></a>
+                            <div class="title-area ">
+                                <div class="name-title jb-text-c">
+                                    <h3 class="jb-tt-u">dr. poma gover</h3>
+                                    <h4 class="jb-tt-c">senior dental surgeon</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="about-card-3">
+                        <div class="card-contain text-bl-5 bg-wh  jb-mr-a jb-ml-a ">
+                            <div class="header-area ">
+                                <div class="image-area ">
+                                   <a href="doctor_single_page.html"> <img class="jb-ml-a jb-mr-a jb-dis-b" src="assets/images/about/doctor_sq.jpg"
+                                        alt=""></a>
+                                </div>
+                            </div>
+                            <a class="icon-round" href="doctor_single_page.html"><i class="fas fa-plus"></i></a>
+                            <div class="title-area ">
+                                <div class="name-title jb-text-c">
+                                    <h3 class="jb-tt-u">dr. poma gover</h3>
+                                    <h4 class="jb-tt-c">senior dental surgeon</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-12 jb-text-c jb-mt-3">
+                    <a class="btn-g-3 jb-tt-u " href="doctors.html"><i class="i-left fas fa-angle-left"></i>View More<i
+                            class="i-right fas fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--our doctor end-->
+    <!--top banner-->
+    <section class="top-section jb-ptb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="icon-area">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contain jb-plr-1">
+                        <h3 class="jb-tt-u">Our location</h3>
+                        <h4>5830 E 2nd St, Casper, WY 82609, USA</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="icon-area">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contain jb-plr-1">
+                        <h3 class="jb-tt-u">Call us</h3>
+                        <h4>+9837498739</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="icon-area">
+                        <i class="fas fa-at"></i>
+                    </div>
+                    <div class="contain jb-plr-1">
+                        <h3 class="jb-tt-u">Email us</h3>
+                        <h4>pomatia@contact.com</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--top banner end-->
+
+    <!--success story-->
+    <section class="success-story">
+        <div class="container">
+            <h2 class="jb-tt-u jb-mb-3 jb-text-c font-w-7">Success Stories</h2>
+            <div class="row">
+                <div class="col-lg-9 jb-ml-a jb-mr-a">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-authro1" role="tabpanel"
+                            aria-labelledby="nav-authro1-tab">
+                            <div class="t-content jb-mb-2 jb-text-c font-w-6 ">
+                                <p>
+                                    Very Good Job and great communication skills. Meeting deadlines well and with the
+                                    minimal guidance is very very productive. They are Highly recommended. Thanks again!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-author2" role="tabpanel" aria-labelledby="nav-author2-tab">
+                            <div class="t-content t-content jb-mb-2 jb-text-c font-w-6 ">
+                                <p> Aminur is a very responsible person who completes his assignments on time. He is
+                                    very easy to work with and very detail oriented. He knows what he is working on. By
+                                    all means, I would definitely recommend “POMATIA” for anyone.</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-author3" role="tabpanel" aria-labelledby="nav-author3-tab">
+                            <div class="t-content t-content jb-mb-2 jb-text-c font-w-6 ">
+                                <p> Aminur is a very responsible person who completes his assignments on time. He is
+                                    very easy to work with and very detail oriented. He knows what he is working on. By
+                                    all means, I would definitely recommend “POMATIA” for anyone.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav row client-area jb-mtb-3" id="nav-tab" role="tablist">
+
+                        <a class="testi-author1 active col-lg-4 col-md-4" id="nav-authro1-tab" data-toggle="tab"
+                            href="#nav-authro1" role="tab" aria-controls="nav-authro1" aria-selected="true">
+                            <img src="assets/images/about/aminur.jpg" alt="author">
+                            <div class="contain">
+                                <h4 class="jb-tt-u">Devide lee</h4>
+                                <h5 class="jb-tt-u">Texas</h5>
+                            </div>
+                        </a>
+                        <a class="testi-author2 col-lg-4 col-md-4" id="nav-author2-tab" data-toggle="tab"
+                            href="#nav-author2" role="tab" aria-controls="nav-author2" aria-selected="false">
+                            <img src="assets/images/about/doctor_sq.jpg" alt="author">
+                            <div class="contain">
+                                <h4 class="jb-tt-u">Devide lee</h4>
+                                <h5 class="jb-tt-u">Texas</h5>
+                            </div>
+                        </a>
+                        <a class="testi-author3 col-lg-4 col-md-4" id="nav-author3-tab" data-toggle="tab"
+                            href="#nav-author3" role="tab" aria-controls="nav-author3" aria-selected="false">
+                            <img src="assets/images/about/doctor_sq.jpg" alt="author">
+                            <div class="contain">
+                                <h4 class="jb-tt-u">Devide lee</h4>
+                                <h5 class="jb-tt-u">Texas</h5>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--success story end-->
+    <!--blog -->
+    <section class="news-blog jb-ptb-6">
+        <div class="container">
+            <h2 class="jb-tt-u jb-mb-3 jb-text-c font-w-7">News & blog</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="jb-card-blog-1 jb-ml-a jb-mr-a">
+                        <a href="news_blog_single_page.html">
+                            <img class="jb-mb-3" src="assets/images/about/doctor.jpg" alt="">
+                            <i class="fas fa-blog"></i>
+                            <div class="contain">
+                                <h3 class="jb-tt-c">Lorem ipsum dolor sit.</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, nemo!</p>
+                            </div>
+                            <div class="footer">
+                                <table style="width:100%">
+                                    <tr>
+                                        <td>Jone</td>
+                                        <td>1-Jan-2020</td>
+                                        <td>5 Comments</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="jb-card-blog-1 jb-ml-a jb-mr-a">
+                        <a href="news_blog_single_page.html">
+                            <img class="jb-mb-3" src="assets/images/about/doctor.jpg" alt="">
+                            <i class="fas fa-blog"></i>
+                            <div class="contain">
+                                <h3 class="jb-tt-c">Lorem ipsum dolor sit.</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, nemo!</p>
+                            </div>
+                            <div class="footer">
+                                <table style="width:100%">
+                                    <tr>
+                                        <td>Jone</td>
+                                        <td>1-Jan-2020</td>
+                                        <td>5 Comments</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="jb-card-blog-1 jb-ml-a jb-mr-a">
+                        <a href="news_blog_single_page.html">
+                            <img class="jb-mb-3" src="assets/images/about/doctor.jpg" alt="">
+                            <i class="fas fa-blog"></i>
+                            <div class="contain">
+                                <h3 class="jb-tt-c">Lorem ipsum dolor sit.</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, nemo!</p>
+                            </div>
+                            <div class="footer">
+                                <table style="width:100%">
+                                    <tr>
+                                        <td>Jone</td>
+                                        <td>1-Jan-2020</td>
+                                        <td>5 Comments</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 jb-text-c jb-mt-4">
+                    <a class="btn-g-3 jb-tt-u " href="news_blog.html"><i class="i-left fas fa-angle-left"></i>View More<i
+                            class="i-right fas fa-angle-right"></i></a>
+                </div>
+            </div>
+    </section>
+    <!--blog end-->
+
+
+<!--footer start-->
+    <footer class="jb-footer-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 ">
+                    <div class="heading">
+                        <img src="assets/images/logo_w.png" alt="">
+                    </div>
+                    <div class="address">
+                        <table style="width:100%">
+                            <tr>
+                                <td width="10%"><i class="fas fa-map-marker-alt"></i></td>
+                                <td><a href="#">5830 E 2nd St, Casper, WY 82609, USA</a> </td>
+                            </tr>
+                            <tr>
+                                <td width="10%"><i class="fas fa-at"></i></td>
+                                <td><a href="#">contact@pomatia.com</a> </td>
+                            </tr>
+                            <tr>
+                                <td width="10%"><i class="fas fa-phone"></i></td>
+                                <td><a href="#">+1 920-264-9596</a> </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-4 time">
+                    <div class="heading">
+                        <h3>Working Houre</h3>
+                    </div>
+                    <table style="width:100%">
+                        <tr>
+                            <td>Monday</td>
+                            <td>9.00 am - 8.00 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>9.00 am - 8.00 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>9.00 am - 8.00 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>9.00 am - 8.00 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>9.00 am - 8.00 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>Off-Day</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>Off-Day</td>
+                        </tr>
+
+                    </table>
+                </div>
+                <div class="col-lg-4 newsletter">
+                    <div class="heading">
+                        <h3>Get News letter</h3>
+                    </div>
+                    <div class="input-group">
+                        <input class="custom-select" id="inputGroupSelect04"
+                            aria-label="Example select with button addon">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button">Submit</button>
+                        </div>
+                    </div>
+
+                    <div class="icon-wb-5">
+
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row privacy">
+                <div class="col-lg-6">
+                    <p>© 2013. <strong>Pomatia</strong> All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-6">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="doctors.html">Doctors</a>
+                    <a href="news_blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="appointment.html">appointment</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!--footer end-->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/css/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="assets/js/functions.js"></script>
+
+</body>
+
+</html>
