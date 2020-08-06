@@ -18,5 +18,13 @@
     "jb"
   ],
   "author": "Jahangir Alam",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pomatia/Dentist-Website-1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Pomatia/Dentist-Website-1/issues"
+  },
+  "homepage": "https://github.com/Pomatia/Dentist-Website-1#readme"
 }

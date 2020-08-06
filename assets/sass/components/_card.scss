@@ -83,9 +83,18 @@
         }
         p{
             font-weight: 500;
-            font-size: 1.8rem;
+            font-size: 1.4rem;
             height: 12rem;
             text-align: justify;
+            color: $text-c-head !important;
+            .read-more{
+                text-decoration: none;
+                color: $primary-c;
+            }
+            .read-more:hover{
+                text-decoration: none;
+                color: $primary-c-h;
+            }
         }
     }
     .footer{
