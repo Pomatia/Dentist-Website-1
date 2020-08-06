@@ -1305,9 +1305,16 @@ button:focus {
       margin-bottom: 2rem; }
     .jb-card-blog-1 .contain p {
       font-weight: 500;
-      font-size: 1.8rem;
+      font-size: 1.4rem;
       height: 12rem;
-      text-align: justify; }
+      text-align: justify;
+      color: #393939 !important; }
+      .jb-card-blog-1 .contain p .read-more {
+        text-decoration: none;
+        color: #00adef; }
+      .jb-card-blog-1 .contain p .read-more:hover {
+        text-decoration: none;
+        color: #028bc2; }
   .jb-card-blog-1 .footer {
     padding: 2rem 1rem;
     border-top: solid 0.1rem #cccccc; }
@@ -2140,7 +2147,34 @@ footer.jb-footer-1 {
 
 .news-blog-page {
   background-color: #ffffff; }
-  .news-blog-page .side-ber {
+  .news-blog-page .link {
+    text-decoration: none;
+    color: #393939; }
+  .news-blog-page .link:hover {
+    text-decoration: none; }
+  .news-blog-page .contain-area {
+    border-bottom: solid 0.1rem #cccccc;
+    padding-bottom: 3rem; }
+    .news-blog-page .contain-area .feature-img img {
+      width: 100%;
+      height: auto; }
+    .news-blog-page .contain-area table td {
+      font-weight: 600; }
+      .news-blog-page .contain-area table td strong {
+        color: #00adef;
+        font-weight: 600;
+        text-transform: capitalize; }
+      .news-blog-page .contain-area table td strong:hover {
+        color: #028bc2; }
+    .news-blog-page .contain-area .contain strong {
+      color: #00adef;
+      text-transform: capitalize; }
+    .news-blog-page .contain-area .contain strong:hover {
+      color: #028bc2; }
+  .news-blog-page .contain-area:hover h3 {
+    color: #00adef;
+    transition: all .3s; }
+  .news-blog-page .side-ber-left {
     padding-left: 3rem; }
   .news-blog-page .search {
     margin-top: 3rem; }
